@@ -1,0 +1,7 @@
+#div {
+    height: 250px;
+    width: 100px;
+    margin: 10px;
+    border: 5px dashed magenta;
+    border-radius: 25px;
+}

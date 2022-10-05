@@ -1,5 +1,6 @@
 var errorText = "Error. Incorrect format."
 
+// /web(dev)?/
 function checkName() {
     var NameExp = /[a-zA-Z\-]+\s[a-zA-Z\-]+/;
     var nameInput = document.getElementById("fullName").value;
