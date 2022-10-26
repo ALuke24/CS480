@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
 <html>
 
 <head>
@@ -8,10 +9,11 @@
 </head>
 
 <body>
-    <div id="newCookie"></div>
+    <div onclick="remove(this)" id="newCookie"></div>
     <br><br>
-    <div id="cookieName">
-        <button>Delete saved cookies</button>
+    <p>Click the printed name to delete it.</p>
+    <div id="newName">
+        <button onclick="newCookie()">New Cookie</button>
     </div>
 </body>
 

@@ -33,6 +33,11 @@ function newCookie() {
     var inputName = prompt("What is your name?");
     setCookie('name', inputName, 5 * 60 * 1000);
     var createdCookie = getCookie('name');
-    $('<div id="newCookie">' + createdCookie + '</div>').appendTo("#newCookie");
+    $('<div id="newCookie" onclick="remove(this)">' + createdCookie + '</div>').appendTo("#newCookie");
     console.log(createdCookie);
 }
+
+function remove(el) {
+    var element = el;
+    element.remove();
+  }
